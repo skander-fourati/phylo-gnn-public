@@ -1,0 +1,70 @@
+# ============================================
+# macOS
+# ============================================
+.DS_Store
+**/.DS_Store
+
+# ============================================
+# Genomic data files (large, use download script)
+# ============================================
+*.gz
+*.fna
+*.fasta
+*.fa
+*.gff
+*.gbk
+*.fastq
+*.bam
+*.sam
+*.vcf
+
+# ============================================
+# Python
+# ============================================
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+*.egg-info/
+.pytest_cache/
+
+# ============================================
+# Models
+# ============================================
+*.bin
+*.safetensors
+*.joblib
+
+# ============================================
+# IDEs
+# ===========================================
+.idea
+
+# ============================================
+# Data - large folders (use download script)
+# ============================================
+scratch/*
+models/*
+!models/.gitkeep
+
+# Large raw data - not committed
+data/raw/uhgg/eggnog_annotations/
+data/raw/uhgg/gff_files/
+data/raw/uhgg/fasta_files/
+data/raw/uhgg/kegg_completeness_DB/
+data/raw/kegg/genome_entries/
+data/raw/kegg/modules_by_org/
+data/raw/eggnog/
+
+# KEGG API cache txt files (re-fetchable)
+data/raw/kegg/**/*.txt
+
+# Large processed outputs - use git LFS
+data/processed/phylo_distance_matrix.npy
+
+# results (runs, checkpoints)
+results/runs/
+results/checkpoints/
+data/genomes-all_metadata.tsv
